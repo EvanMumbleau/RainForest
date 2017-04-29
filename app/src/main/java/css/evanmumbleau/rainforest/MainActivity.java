@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
         checkbox5 = (CheckBox) findViewById(R.id.checkBox5);
     }
 
-   public void onClicked(View view){
+   //maybe...??? (checkbox setup)
+    public void onClicked(View view){
        //is the view now checked?
        boolean checked = (CheckBox) view).isChecked();
 

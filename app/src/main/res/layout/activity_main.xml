@@ -116,9 +116,8 @@
         <TextView
             android:text='Alienware - 17.3"- Intel Core i7 - 16GB Memory - NVIDIA GeForce GTX 1070 - 1TB Hard Drive + 128GB Solid State Drive'
             android:layout_width="246dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/textView3"
-            android:layout_weight="0.60" />
+            android:layout_height="76dp"
+            android:id="@+id/textView3" />
 
         <CheckBox
             android:layout_width="wrap_content"
