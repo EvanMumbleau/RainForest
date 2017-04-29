@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "793841652697",
+    "firebase_url": "https://rainforest-d272b.firebaseio.com",
+    "project_id": "rainforest-d272b",
+    "storage_bucket": "rainforest-d272b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:793841652697:android:6dae984c07be513f",
+        "android_client_info": {
+          "package_name": "css.evanmumbleau.rainforest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "793841652697-jvpmuksbqrsgo27hacokepu36p5311gq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "css.evanmumbleau.rainforest",
+            "certificate_hash": "77105482e4f87a83263a838afedd040c41a2fa1d"
+          }
+        },
+        {
+          "client_id": "793841652697-lkf09q0aouomaqqc2g0nrvatv2kh359s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgvKEiTecnm_W9fEZk-ZV11ygPEIvqFdE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "793841652697-lkf09q0aouomaqqc2g0nrvatv2kh359s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
