@@ -1,10 +1,13 @@
 package css.evanmumbleau.rainforest;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -15,11 +18,15 @@ public class MainActivity extends AppCompatActivity {
     CheckBox checkbox, checkbox2, checkbox3, checkbox4, checkbox5;
 
     ArrayList<String> selection = new ArrayList<String>();
+    TextView final_text;
+    TextView tvTotal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final_text = (TextView)findViewById(R.id.final_result);
 
         checkbox = (CheckBox) findViewById(R.id.checkBox);
         checkbox2 = (CheckBox) findViewById(R.id.checkBox2);
@@ -63,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                    selection.remove("Asus - ROG GL502VM");
                }
                break;
-           case  R.id.checkBox4:
+           case  R.id.checkBox5:
                if(checked)
                {selection.add("MSI");}
                else{
@@ -75,11 +82,17 @@ public class MainActivity extends AppCompatActivity {
 
     public void finalSelection(View View) {
 
+        Toast.makeText(MainActivity.this, "Item(s) added to your cart!", Toast.LENGTH_LONG).show();
+
         String final_laptop_selection = "";
 
         for(String Selections : selection){
             final_laptop_selection = final_laptop_selection + Selections + "\n";
         }
+
+        Intent i = new Intent (MainActivity.this,CheckoutActivity.class);
+        startActivity(i);
+
     }
 
 }
