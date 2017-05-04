@@ -10,6 +10,7 @@ public class CheckoutActivity extends AppCompatActivity {
 
 
         TextView final_text;
+        //String final_laptop_selection;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,9 +22,13 @@ public class CheckoutActivity extends AppCompatActivity {
         ArrayList<String> selection =  extras.getStringArrayList("SELECT");
 
 
+
+        //final_text.setText(final_laptop_selection);
+        //final_text.setEnabled(true);
+
         final_text.setText(selection.get(0));
-       // final_text.setText(bundle);
 
 
+        // final_text.setText(bundle);
     }
 }
