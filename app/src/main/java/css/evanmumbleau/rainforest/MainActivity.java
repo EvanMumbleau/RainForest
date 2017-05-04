@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     CheckBox checkbox, checkbox2, checkbox3, checkbox4, checkbox5;
 
     ArrayList<String> selection = new ArrayList<String>();
+    ArrayList<String> price = new ArrayList<String>();
     TextView final_text;
     TextView tvTotal;
 
@@ -91,6 +92,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         Intent i = new Intent (MainActivity.this,CheckoutActivity.class);
+        i.putStringArrayListExtra("SELECT", selection);
         startActivity(i);
 
     }

@@ -4,6 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 public class CheckoutActivity extends AppCompatActivity {
 
 
@@ -15,6 +17,11 @@ public class CheckoutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_checkout);
 
         final_text = (TextView)findViewById(R.id.final_result);
+        Bundle extras = getIntent().getExtras();
+        ArrayList<String> selection =  extras.getStringArrayList("SELECT");
+
+
+        final_text.setText(selection.get(0));
        // final_text.setText(bundle);
 
 
