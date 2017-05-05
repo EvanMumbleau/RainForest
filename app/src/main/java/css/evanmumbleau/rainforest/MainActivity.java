@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<String> price = new ArrayList<String>();
     TextView final_text;
     TextView tvTotal;
-    DatabaseReference myDbRef;
+    //DatabaseReference myDbRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
 
         int totalPrice = 0;
         // Write a message to the database
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        myDbRef = database.getReference("Everyone Votes");
+        //FirebaseDatabase database = FirebaseDatabase.getInstance();
+        //myDbRef = database.getReference("Data");
     }
 
    //maybe...??? (checkbox setup)
@@ -99,34 +99,14 @@ public class MainActivity extends AppCompatActivity {
 
         Toast.makeText(MainActivity.this, "Item(s) added to your cart!", Toast.LENGTH_LONG).show();
 
-        String final_laptop_selection = "";
 
-        for(String Selections : selection){
-            final_laptop_selection = final_laptop_selection + Selections + "\n";
-        }
+
+
 
         //final_text.setText(final_laptop_selection);
             //final_text.setEnabled(true);
 
 
-
-        //firebase code
-        //firebaseReference = new Firebase("https://rainforest-d272b.firebaseio.com/");
-
-        Log.d("CIS3334", "saving Data: ");        // debugging log
-        // ---- Get a new database key for the vote
-        String key = myDbRef.child("Data").push().getKey();
-        // ---- set up the vote
-        String voteText = editTextVote.getText().toString();
-        Integer voteNum = 0;
-        if (voteText.compareToIgnoreCase("Dell - Inspiron")==0) {
-            voteNum = 1;
-        } else if (voteText.compareToIgnoreCase("CAT")==0) {
-            voteNum = 2;
-        }
-        Vote vote = new Vote(voteText, voteNum);
-        // ---- write the vote to Firebase
-        myDbRef.child("Data").child(key).setValue(Data);
 
 
 
@@ -136,18 +116,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-//firebase code
-    myDbRef.child("Data").addValueEventListener(new ValueEventListener() {
-        @Override
-        public void onDataChange(DataSnapshot dataSnapshot) {
-            Log.d("CIS3334", "Starting onDataChange()");        // debugging log
-            editTextAllVotes.setText("");           // clear out the all votes text box
-            // loop through all the votes returned
-            for (DataSnapshot voteDataSnapshot : dataSnapshot.getChildren()) {
-                Vote vote = voteDataSnapshot.getValue(Vote.class);          // get the current vote from the data set returned
-                editTextAllVotes.append("\n" + vote.toString());            // display the vote in the edit text widget
-            }
         }
 
-}
-}
+
+
