@@ -27,7 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Check Out"
-                android:textSize="21sp"
+                android:textSize="30sp"
                 android:textAlignment="center"
                 android:textStyle="normal|bold" />
 
@@ -38,17 +38,12 @@
                 android:weightSum="1">
 
                 <TextView
-                    android:layout_height="444dp"
+                    android:layout_height="356dp"
                     android:id="@+id/final_result"
-                    android:layout_width="246dp" />
-
-                <TextView
-                    android:text="Total"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:id="@+id/tvTotal"
-                    android:layout_weight="1.76"
-                    android:textStyle="normal|bold" />
+                    android:layout_width="match_parent"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    android:lineSpacingExtra="12sp" />
 
             </LinearLayout>
 
@@ -102,6 +97,14 @@
                 android:layout_height="wrap_content">
 
             </LinearLayout>
+
+            <Button
+                android:text="View Recommended Items..."
+                android:layout_width="322dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/RecButt"
+                android:textAlignment="center"
+                android:onClick="rec" />
 
 
         </LinearLayout>

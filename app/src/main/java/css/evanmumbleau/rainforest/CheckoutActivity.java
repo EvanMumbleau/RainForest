@@ -3,7 +3,9 @@ package css.evanmumbleau.rainforest;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -68,4 +70,11 @@ public class CheckoutActivity extends AppCompatActivity {
 //        }
 //
 //    }
+public void rec(View View) {
+
+    Toast.makeText(CheckoutActivity.this, "This Feature Coming Soon...", Toast.LENGTH_LONG).show();
+}
+
+
+
 }
