@@ -38,7 +38,7 @@
                 android:weightSum="1">
 
                 <TextView
-                    android:layout_height="356dp"
+                    android:layout_height="329dp"
                     android:id="@+id/final_result"
                     android:layout_width="match_parent"
                     android:textSize="18sp"
@@ -100,7 +100,7 @@
 
             <Button
                 android:text="View Recommended Items..."
-                android:layout_width="322dp"
+                android:layout_width="284dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/RecButt"
                 android:textAlignment="center"

@@ -23,21 +23,22 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="307dp"
+        android:layout_height="59dp"
         android:weightSum="1">
 
         <ImageView
             android:layout_height="66dp"
             app:srcCompat="@mipmap/delllaptop"
             android:id="@+id/imageViewDell"
-            android:layout_width="66dp" />
+            android:layout_width="wrap_content" />
 
         <TextView
             android:text='Dell - Inspiron 15.6" - Intel Core i5 - 8GB Memory - NVIDIA GeForce GTX 1050 - 1TB + 8GB Hybrid Hard Drive'
             android:layout_height="match_parent"
             android:id="@+id/textView"
-            android:layout_width="246dp" />
+            android:layout_width="214dp"
+            android:layout_weight="0.77" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -72,12 +73,11 @@
             android:layout_height="66dp"
             app:srcCompat="@mipmap/hplaptop"
             android:id="@+id/imageViewHP"
-            android:layout_weight="0.45"
-            android:layout_width="66dp" />
+            android:layout_width="wrap_content" />
 
         <TextView
             android:text='HP - OMEN 15.6"- Intel Core i7 - 8GB Memory - NVIDIA GeForce GTX 1050 - 1TB HDD'
-            android:layout_width="246dp"
+            android:layout_width="203dp"
             android:layout_height="match_parent"
             android:id="@+id/textView2" />
 
@@ -113,11 +113,11 @@
             app:srcCompat="@mipmap/awearlaptop"
             android:id="@+id/imageViewAware"
             android:layout_height="66dp"
-            android:layout_width="66dp" />
+            android:layout_width="53dp" />
 
         <TextView
             android:text='Alienware - 17.3"- Intel Core i7 - 16GB Memory - NVIDIA GeForce GTX 1070 - 1TB Hard Drive + 128GB Solid State Drive'
-            android:layout_width="246dp"
+            android:layout_width="209dp"
             android:layout_height="76dp"
             android:id="@+id/textView3" />
 
@@ -152,13 +152,13 @@
             app:srcCompat="@mipmap/asuslaptop"
             android:id="@+id/imageViewAsus"
             android:layout_height="66dp"
-            android:layout_width="66dp" />
+            android:layout_width="wrap_content" />
 
         <TextView
             android:text='Asus - ROG GL502VM 15.6"- Intel Core i7 - 12GB Memory - NVIDIA GeForce GTX 1060 - 1TB Hard Drive'
             android:layout_height="match_parent"
             android:id="@+id/textView4"
-            android:layout_width="246dp" />
+            android:layout_width="211dp" />
 
         <CheckBox
             android:layout_width="wrap_content"
@@ -184,13 +184,13 @@
                 app:srcCompat="@mipmap/mislaptop"
                 android:id="@+id/imageViewMIS"
                 android:layout_height="66dp"
-                android:layout_width="66dp" />
+                android:layout_width="wrap_content" />
 
             <TextView
                 android:text='MSI - 15.6" - Intel Core i7 - 16GB Memory - NVIDIA GeForce GTX 1060 - 1TB Hard Drive + 256GB Solid State Drive'
                 android:layout_height="match_parent"
                 android:id="@+id/textView9"
-                android:layout_width="246dp" />
+                android:layout_width="211dp" />
 
             <CheckBox
                 android:layout_width="wrap_content"
