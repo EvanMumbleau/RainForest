@@ -1,5 +1,6 @@
 package css.evanmumbleau.rainforest;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -72,7 +73,9 @@ public class CheckoutActivity extends AppCompatActivity {
 //    }
 public void rec(View View) {
 
-    Toast.makeText(CheckoutActivity.this, "This Feature Coming Soon...", Toast.LENGTH_LONG).show();
+    Toast.makeText(CheckoutActivity.this, "Recommended Items...", Toast.LENGTH_LONG).show();
+    Intent o = new Intent (CheckoutActivity.this,RecActivity.class);
+    startActivity(o);
 }
 
 

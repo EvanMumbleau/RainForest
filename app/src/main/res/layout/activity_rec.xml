@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_rec"
     android:layout_width="match_parent"
@@ -8,7 +9,9 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="css.evanmumbleau.rainforest.RecActivity">
+    tools:context="css.evanmumbleau.rainforest.RecActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
 
     <TextView
         android:layout_width="match_parent"
@@ -28,5 +31,50 @@
         android:layout_alignParentStart="true">
 
     </LinearLayout>
+
+    <ImageView
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/desktop1"
+        android:id="@+id/imageView4"
+        android:layout_weight="0.24" />
+
+    <TextView
+        android:text="iBUYPOWER - Desktop - AMD FX-Series - 8GB Memory - NVIDIA GeForce GTX 1060 - 120GB Solid State Drive + 1TB Hard Drive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView10"
+        android:layout_weight="0.04" />
+
+    <ImageView
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:id="@+id/imageView5"
+        android:layout_width="127dp" />
+
+    <TextView
+        android:text="iBUYPOWER - Desktop - AMD FX-Series - 16GB Memory - NVIDIA GeForce GTX 1060 - 2TB Hard Drive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView13" />
+
+    <ImageView
+        android:layout_height="79dp"
+        app:srcCompat="@mipmap/adesk"
+        android:id="@+id/imageView6"
+        android:layout_width="127dp" />
+
+    <TextView
+        android:text="Alienware - Alpha R2 Desktop - Intel Core i7 - 8GB Memory - NVIDIA GeForce GTX 960 - 1TB Hard Drive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView14" />
+
+    <Button
+        android:text="Back to Gaming Laptops"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/homeButt"
+        android:onClick="homeButt" />
 
 </LinearLayout>
